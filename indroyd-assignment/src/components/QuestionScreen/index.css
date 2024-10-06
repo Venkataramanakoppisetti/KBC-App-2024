@@ -1,0 +1,76 @@
+/* QuestionScreen.css */
+
+.question-screen {
+  display: flex;
+  flex-direction: column;
+  align-items: center; /* Center items */
+  padding: 20px; /* Padding around the component */
+  background-color: #f9f9f9; /* Light background */
+  border-radius: 8px; /* Rounded corners */
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+}
+
+.question-text {
+  font-size: 1.8em; /* Larger font for question */
+  margin-bottom: 20px; /* Space below question */
+  color: #333; /* Dark text color */
+  text-align: center; /* Center the text */
+}
+
+.options-form {
+  width: 100%; /* Full width */
+}
+
+.option-container {
+  margin-bottom: 15px; /* Space between options */
+}
+
+.option-label {
+  display: flex; /* Flexbox for better alignment */
+  align-items: center; /* Center vertically */
+  background-color: #ffffff; /* White background for options */
+  border: 1px solid #ccc; /* Light gray border */
+  padding: 10px; /* Padding inside each option */
+  border-radius: 5px; /* Rounded corners */
+  transition: background-color 0.3s, border-color 0.3s; /* Smooth transitions */
+  cursor: pointer; /* Pointer cursor */
+}
+
+.option-input {
+  margin-right: 10px; /* Space between radio and label text */
+}
+
+.option-label:hover {
+  background-color: #f1f1f1; /* Light gray background on hover */
+  border-color: #888; /* Darker border on hover */
+}
+
+.submit-button {
+  background-color: #4CAF50; /* Green background */
+  color: white; /* White text */
+  border: none;
+  padding: 10px 15px; /* Padding inside button */
+  font-size: 1em; /* Font size */
+  cursor: pointer; /* Pointer cursor */
+  border-radius: 5px; /* Rounded corners */
+  transition: background-color 0.3s; /* Smooth transition */
+  margin-top: 20px; /* Space above button */
+  width: 100%; /* Full width */
+}
+
+.submit-button:hover {
+  background-color: #45a049; /* Darker green on hover */
+}
+
+.feedback-message {
+  margin-top: 15px; /* Space above feedback message */
+  font-size: 1.2em; /* Larger font for feedback */
+}
+
+.feedback-message.correct {
+  color: #4CAF50; /* Green for correct feedback */
+}
+
+.feedback-message.incorrect {
+  color: #f44336; /* Red for incorrect feedback */
+}

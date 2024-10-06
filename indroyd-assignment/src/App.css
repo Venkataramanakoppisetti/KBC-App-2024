@@ -1,0 +1,74 @@
+/* App.css */
+
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #f4f4f9; /* Light background */
+    margin: 0;
+    padding: 0;
+    color: #333; /* Dark text color */
+  }
+  
+  .quiz-game-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center; /* Center content */
+    justify-content: center;
+    padding: 20px;
+    max-width: 800px; /* Limit the width */
+    margin: auto; /* Center container horizontally */
+  }
+  
+  .game-head {
+    font-size: 2em; /* Larger heading */
+    margin-bottom: 20px; /* Space below heading */
+    color: #4CAF50; /* Green color */
+  }
+  
+  .game-container {
+    width: 100%; /* Full width for inner container */
+  }
+  
+  h2, h3 {
+    margin: 20px 0; /* Space around headings */
+    text-align: center; /* Center align text */
+  }
+  
+  ul {
+    list-style-type: none; /* Remove bullet points */
+    padding: 0;
+  }
+  
+  button {
+    background-color: #4CAF50; /* Green background */
+    color: white; /* White text */
+    border: none;
+    padding: 10px 15px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 10px 2px;
+    cursor: pointer;
+    border-radius: 5px; /* Rounded corners */
+    transition: background-color 0.3s; /* Smooth transition */
+  }
+  
+  button:hover {
+    background-color: #45a049; /* Darker green on hover */
+  }
+  
+  input[type="text"], input[type="radio"] {
+    padding: 10px; /* Space inside input */
+    margin: 10px 0; /* Space around inputs */
+    width: calc(100% - 22px); /* Full width minus padding */
+    border: 1px solid #ccc; /* Light gray border */
+    border-radius: 4px; /* Rounded corners */
+  }
+  
+  input[type="text"]:focus {
+    border-color: #4CAF50; /* Green border on focus */
+    outline: none; /* Remove default outline */
+  }
+  
+  
+  

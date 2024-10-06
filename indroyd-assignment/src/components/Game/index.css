@@ -1,0 +1,55 @@
+/* Game.css */
+
+.game-main-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center; /* Center items horizontally */
+    padding: 20px;
+    max-width: 800px; /* Maximum width */
+    margin: auto; /* Center the container */
+    background-color: #fff;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    border-radius: 6px;
+    
+  }
+  
+  .game-room-title {
+    font-size: 2em; /* Larger font for the title */
+    margin-bottom: 20px; /* Space below title */
+    color: #4CAF50; /* Green color */
+    text-align: center; /* Center align text */
+  }
+  
+  .qr-code-container {
+    text-align: center; /* Center the QR code */
+    margin-bottom: 20px; /* Space below QR code */
+  }
+  
+  .qr-code-description {
+    margin-top: 10px; /* Space above description */
+    color: #555; /* Darker gray text for description */
+    font-size: 1em; /* Regular font size */
+  }
+  
+  button {
+    background-color: #4CAF50; /* Green background for buttons */
+    color: white; /* White text */
+    border: none;
+    padding: 10px 15px; /* Padding inside button */
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 10px 2px; /* Margin around buttons */
+    cursor: pointer; /* Pointer cursor */
+    border-radius: 5px; /* Rounded corners */
+    transition: background-color 0.3s; /* Smooth transition */
+  }
+  
+  button:hover {
+    background-color: #45a049; /* Darker green on hover */
+  }
+  
+  /* Additional styling for JoinGame and QuestionScreen components could be added here as needed */
+  
