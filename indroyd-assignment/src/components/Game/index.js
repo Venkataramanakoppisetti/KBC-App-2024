@@ -7,7 +7,7 @@ import './index.css';
 
 const Game = ({ players, setPlayers, isGameStarted, setIsGameStarted }) => {
   const [currentQuestionIndex, setCurrentQuestionIndex] = useState(0);
-  const gameURL = 'https://quiz-app-2024.vercel.app/';
+  const gameURL = 'https://kbc-app-2024.vercel.app/';
 
   return (
     <div className="game-main-container">
