@@ -1,58 +1,56 @@
-/* Feedback.css */
-
 .feedback-container {
     display: flex;
-    flex-direction: column; /* Stack items vertically */
-    align-items: center; /* Center items horizontally */
-    justify-content: center; /* Center items vertically */
-    padding: 30px; /* Padding around the container */
-    background-color: #f4f4f4; /* Light gray background */
-    border-radius: 10px; /* Rounded corners */
-    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
-    margin: 20px; /* Margin around the container */
-    max-width: 400px; /* Maximum width */
-    text-align: center; /* Center text */
+    flex-direction: column; 
+    align-items: center;
+    justify-content: center; 
+    padding: 30px; 
+    background-color: #f4f4f4; 
+    border-radius: 10px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1); 
+    margin: 20px;
+    max-width: 400px; 
+    text-align: center; 
   }
   
   .feedback-title {
-    font-size: 2em; /* Larger font size for title */
-    margin-bottom: 10px; /* Space below title */
-    color: #333; /* Dark text color */
+    font-size: 2em; 
+    margin-bottom: 10px;
+    color: #333;
   }
   
   .feedback-subtitle {
-    font-size: 1.5em; /* Slightly smaller font size for subtitle */
-    margin-bottom: 20px; /* Space below subtitle */
-    color: #555; /* Medium gray text color */
+    font-size: 1.5em;
+    margin-bottom: 20px; 
+    color: #555; 
   }
   
   .score-list {
-    list-style: none; /* Remove default list styles */
-    padding: 0; /* Remove default padding */
-    width: 100%; /* Full width */
+    list-style: none; 
+    padding: 0; 
+    width: 100%;
   }
   
   .score-item {
-    display: flex; /* Use flexbox for horizontal alignment */
-    justify-content: space-between; /* Space between name and score */
-    padding: 10px; /* Padding around each score item */
-    margin: 5px 0; /* Space above and below each item */
-    background-color: #ffffff; /* White background for score items */
-    border-radius: 5px; /* Rounded corners for score items */
-    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Subtle shadow for score items */
-    transition: transform 0.3s; /* Transition for hover effect */
+    display: flex; 
+    justify-content: space-between; 
+    padding: 10px; 
+    margin: 5px 0; 
+    background-color: #ffffff; 
+    border-radius: 5px; 
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); 
+    transition: transform 0.3s; 
   }
   
   .score-item:hover {
-    transform: translateY(-3px); /* Lift effect on hover */
+    transform: translateY(-3px);
   }
   
   .player-name {
-    font-weight: bold; /* Bold font for player name */
-    color: #007bff; /* Bootstrap primary color for names */
+    font-weight: bold; 
+    color: #007bff; 
   }
   
   .player-score {
-    color: #333; /* Dark color for scores */
+    color: #333;
   }
   

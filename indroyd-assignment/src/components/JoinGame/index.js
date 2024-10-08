@@ -1,5 +1,5 @@
-// src/components/JoinGame/index.js
 import React, { useState } from 'react';
+import './index.css'
 
 const JoinGame = ({ players, setPlayers, setIsGameStarted }) => {
   const [name, setName] = useState('');
@@ -20,7 +20,7 @@ const JoinGame = ({ players, setPlayers, setIsGameStarted }) => {
         onChange={(e) => setName(e.target.value)}
         placeholder="Enter your name"
       />
-      <button onClick={handleJoinGame}>Join Game</button>
+      <button className='join-game-button' onClick={handleJoinGame}>Join </button>
     </div>
   );
 };

@@ -1,11 +1,10 @@
-// src/components/QuestionScreen/index.js
 import React, { useState } from 'react';
-import { useNavigate } from 'react-router-dom'; // Import useNavigate from react-router-dom
+import { useNavigate } from 'react-router-dom'; 
 import questionData from '../../data/questions.json';
-import './index.css'; // Import the CSS file for styling
+import './index.css';
 
 const QuestionScreen = ({ players, setPlayers, currentQuestionIndex, setCurrentQuestionIndex, setIsGameStarted }) => {
-  const navigate = useNavigate(); // Initialize navigate
+  const navigate = useNavigate(); 
   const [selectedAnswer, setSelectedAnswer] = useState('');
   const [feedback, setFeedback] = useState('');
 
@@ -37,16 +36,14 @@ const QuestionScreen = ({ players, setPlayers, currentQuestionIndex, setCurrentQ
         setSelectedAnswer('');
         setFeedback('');
       } else {
-        // Navigate to the Feedback component with players data
         navigate('/feedback', { state: { players } });
         setIsGameStarted(false);
       }
     }, 1000); 
   };
 
-  // Check if question data is valid
   if (!currentQuestion) {
-    return <div>Loading...</div>; // Handle case where questionData is undefined
+    return <div>Loading...</div>;
   }  
 
   return (
@@ -55,12 +52,12 @@ const QuestionScreen = ({ players, setPlayers, currentQuestionIndex, setCurrentQ
       <form onSubmit={handleSubmit} className="options-form">
         {currentQuestion.options.map((option) => (
           <div key={option} className="option-container">
-            <label className="option-label">
+            <label className="option">
               <input
                 type="radio"
-                value={option.charAt(0)} // Use the first character as the answer identifier (A, B, C, D)
+                value={option.charAt(0)}
                 checked={selectedAnswer === option.charAt(0)}
-                onChange={(e) => setSelectedAnswer(e.target.value)} // Update selected answer on change
+                onChange={(e) => setSelectedAnswer(e.target.value)}
                 className="option-input"
               />
               {option}

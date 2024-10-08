@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
-import { BrowserRouter as Router, Routes, Route } from 'react-router-dom'; // Import Router components
+import { BrowserRouter as Router, Routes, Route } from 'react-router-dom'; 
 import Game from './components/Game';
-import Feedback from './components/Feedback'; // Import the Feedback component
+import Feedback from './components/Feedback'; 
 import './App.css';
 
 const App = () => {
@@ -27,7 +27,7 @@ const App = () => {
             />
             <Route 
               path="/feedback" 
-              element={<Feedback players={players} />} // Pass players data to Feedback
+              element={<Feedback players={players} />} 
             />
           </Routes>
         </div>
